@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mess Cost Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Mess Cost Calculator</h1>  
+    <button id="themeToggle">Toggle Theme</button>
+  <form id="costForm">
+    <div class="section">
+      <h3>Total Costs</h3>
+      <label>Total Water Cost: <input type="number" step="0.01" id="waterCost" required></label>
+      <label>Total Meat Cost: <input type="number" step="0.01" id="meatCost" required></label>
+      <label>Total Veg Cost: <input type="number" step="0.01" id="vegCost" required></label>
+      <label>Total Establishment Cost (without Water): <input type="number" step="0.01" id="estCost" required></label>
+      <label>Total Veg Meal Count: <input type="number" step="0.01" id="totalVegMeals" required></label>
+      <label>Total Meat Meal Count: <input type="number" step="0.01" id="totalMeatMeals" required></label>
+      <label>Total Number of Members: <input type="number" id="totalMembers" value="3" min="1"></label>
+    </div>
+
+    <div class="section">
+      <h3>Member Details</h3>
+      <div id="members"></div>
+    </div>
+
+    <button type="submit">Calculate</button>
+    <div id="result"></div>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>
