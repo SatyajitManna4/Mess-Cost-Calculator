@@ -59,7 +59,3 @@ document.getElementById("costForm").addEventListener("submit", function (e) {
 
   document.getElementById("result").innerHTML = result;
 });
-
-document.getElementById('themeToggle').addEventListener('click', () => {
-  document.body.classList.toggle('dark-mode');
-});
